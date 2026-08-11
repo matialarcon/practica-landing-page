@@ -11,9 +11,7 @@ body {
 /*Estilos de la sección del título y descripción del producto*/
 
 .title-section {
-    align-items: center;
-    margin-top: 70px;
-    margin-left: 30px;
+    padding: 5rem 6vw 0 6vw;
 }
 
 .heading {
@@ -24,10 +22,10 @@ body {
 
 .title {
     margin-top: 20px;
-    font-size: 50px;
+    max-width: 14ch;
+    font-size: clamp(3rem, 7vw, 5.5rem);
     font-weight: lighter;
     text-wrap: balance;
-    max-width: 14ch;
     line-height: 1.02;
 }
 
@@ -64,4 +62,35 @@ body {
 
 .button-form-container:has(.button-form:hover) {
     transform: translateY(-3px);
+}
+
+/*Estilos de la sección de los datos de confianza*/
+
+.trust-section {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid rgb(212, 206, 206);
+    border-bottom: 1px solid rgb(212, 206, 206);
+    padding: 2rem 6vw;
+    
+}
+
+.trust-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: rgb(61, 33, 33);
+    text-wrap: balance;
+}
+
+.trust-item-number {
+    font-style: normal;
+    color: #C1622A;
+    font-size: 2rem;
+    letter-spacing: normal;
 }
