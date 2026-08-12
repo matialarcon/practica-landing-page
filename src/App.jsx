@@ -7,6 +7,9 @@ function App() {
       <section className="trust-section">
         <Trust />
       </section>
+      <section className="benefits-section">
+        <Benefits />
+      </section>
     </>
   )
 }
@@ -32,6 +35,25 @@ function Trust() {
       <div className="trust-item"><em className="trust-item-number">4</em>PRODUCTORES ALIADOS</div>
 
       <div className="trust-item"><em className="trust-item-number">72h</em>DEL TUESTE A TU PUERTA</div>
+    </>
+  )
+}
+
+function Benefits() {
+  return(
+    <>
+      <div>
+        <h2 className="benefits-title">Trazabilidad real</h2>
+        <p className="benefits-description">Cada bolsa lleva la finca, la variedad y la fecha de tueste. Sabés exactamente qué estás tomando.</p>
+      </div>
+      <div>
+        <h2 className="benefits-title">Molienda a pedido</h2>
+        <p className="benefits-description">Elegís el punto de molienda según tu método: prensa francesa, filtro, espresso o grano entero.</p>
+      </div>
+      <div>
+        <h2 className="benefits-title">Sin suscripción forzada</h2>
+        <p className="benefits-description">Pedís cuando querés. Si te gustó, volvés. No hay cargos automáticos ni permanencia.</p>
+      </div>
     </>
   )
 }

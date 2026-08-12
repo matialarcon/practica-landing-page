@@ -71,26 +71,47 @@ body {
     gap: 40px;
     margin-top: 50px;
     flex-wrap: wrap;
-    justify-content: space-between;
     border-top: 1px solid rgb(212, 206, 206);
     border-bottom: 1px solid rgb(212, 206, 206);
     padding: 2rem 6vw;
-    
 }
 
 .trust-item {
+    flex: 1 1 180px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-size: 11px;
     letter-spacing: 1.5px;
     color: rgb(61, 33, 33);
-    text-wrap: balance;
 }
 
 .trust-item-number {
     font-style: normal;
+    letter-spacing: normal;
     color: #C1622A;
     font-size: 2rem;
-    letter-spacing: normal;
+}
+
+/*Estilos de la sección de beneficios*/
+
+.benefits-section {
+    padding: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.benefits-item {
+    flex: 1 1 250px; 
+}
+
+.benefits-title {
+    font-weight: lighter;
+    color: rgb(48, 88, 48);
+    font-size: 1.4rem;
+}
+
+.benefits-description {
+    color: rgb(61, 33, 33);
 }
