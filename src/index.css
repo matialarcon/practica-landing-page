@@ -202,12 +202,16 @@ h1, h2, h3 {
     transform: translateY(-3px);
 }
 
-.correct-submit-container {
+.correct-submit-container, .failed-submit-container {
     margin-top: 20px;
 }
 
-.correct-submit {
+.correct-submit, .failed-submit {
     color: #C1622A;
     font-size: 0.8rem;
     letter-spacing: 1px;
+}
+
+.failed-submit {
+    color: #b91c1c;
 }
