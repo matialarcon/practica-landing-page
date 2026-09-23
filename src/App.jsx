@@ -13,7 +13,7 @@ function App() {
   }
 
   return (
-    <>
+    <main>
       <section className="title-section">
         <Title handlerRefContact={handlerRefContact} />
       </section>
@@ -26,7 +26,7 @@ function App() {
       <section className="contact-section" ref={refContact}>
         <Contact />
       </section>
-    </>
+    </main>
   )
 }
 

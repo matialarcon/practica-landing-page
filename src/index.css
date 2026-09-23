@@ -21,7 +21,7 @@ h1, h2, h3 {
 .heading {
     font-size: 11px;
     letter-spacing: 2px;
-    color: #C1622A;
+    color: #8f3d0c;
 }
 
 .title {
@@ -33,7 +33,7 @@ h1, h2, h3 {
 }
 
 .title-fragment {
-    color: #C1622A;
+    color: #8f3d0c;
 }
 
 .description {
@@ -92,7 +92,7 @@ h1, h2, h3 {
 .trust-item-number {
     font-style: normal;
     letter-spacing: normal;
-    color: #C1622A;
+    color: #8f3d0c;
     font-size: 2rem;
 }
 
