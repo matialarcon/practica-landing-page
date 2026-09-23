@@ -8,10 +8,15 @@ export function Contact() {
     const [email, setEmail] = useState("")
     const [preparationMethod, setPreparationMethod] = useState("")
     const timer = useRef(null)
+    const refMessage = useRef(null)
 
     useEffect(() => {
         return() => clearTimeout(timer.current)
     }, [])
+
+    useEffect(() => {
+        refMessage.current?.scrollIntoView({ behavior: 'smooth'})
+    }, [submit, error])
 
     const handlerSubmit = async (event) => {
         event.preventDefault()
@@ -86,12 +91,12 @@ export function Contact() {
                     </div>
                 </form>
                 {submit && (
-                <div className="correct-submit-container">
+                <div className="correct-submit-container" ref={refMessage}>
                     <div className="correct-submit">✅ Recibimos tu mensaje. Te escribimos pronto.</div>
                 </div>
                 )}
                 {error && (
-                <div className="failed-submit-container">
+                <div className="failed-submit-container" ref={refMessage}>
                     <div className="failed-submit">❌ {messageError}</div>
                 </div>
                 )}
